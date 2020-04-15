@@ -21,9 +21,12 @@
 				<p>上传图片2</p>
 			</div>
 		</section>
-		<input type="button" value="打开一个新的普通地址" onclick="openWin()"/><br>
-		<input type="button" value="打开一个大的pdf地址" onclick="openWin1()"/><br>
-		<input type="button" value="打开一个小的pdf地址" onclick="openWin2()"/><br>
+		<p>此处放一个必应的的地址跳转可以看一下webview处理的沉浸式效果````额```也算不上沉浸式！</p>
+		<a href="https://cn.bing.com/">必应搜索网站</a><br><br>
+		<input type="button" value="打开一个新的普通地址" onclick="openWin()"/><br><br>
+		<input type="button" value="打开一个大的pdf地址" onclick="openWin1()"/><br><br>
+		<input type="button" value="打开一个小的pdf地址" onclick="openWin2()"/><br><br>
+		<input type="button" value="加载一个弹窗页面" onclick="openWin3()"/><br>
 </body>
 <script>
         $(function(){
@@ -44,10 +47,16 @@
        		 window.opener=null;
        		 window.open('http://www.zhangziwei.cn:8081/txt/Linux基础.pdf','Linux基础');
        		 window.close();
+
     	}
     	 function openWin2(){
        		 window.opener=null;
        		 window.open('http://www.zhangziwei.cn:8081/txt/前端项目部署.pdf','前端项目部署');
+       		 window.close();
+    	}
+    	function openWin3(){
+       		 window.opener=null;
+       		 window.open('http://www.zhangziwei.cn:8081/testhtml/testAlert.html','');
        		 window.close();
     	}
 

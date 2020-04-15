@@ -9,6 +9,7 @@ import androidx.core.content.ContextCompat;
 import cn.com.sinosoft.logger.Logger;
 
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -16,6 +17,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.KeyEvent;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
@@ -367,7 +369,9 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         killProcess(myPid());//退出
     }
-
+    //返回键操作
+    private long backTime = 0;
+    private long exitTime = 0;
     /**
      * 返回事件处理
      * @param keyCode
@@ -376,8 +380,47 @@ public class MainActivity extends AppCompatActivity {
      */
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        return super.onKeyDown(keyCode, event);
+//        return super.onKeyDown(keyCode, event);
 //        这里一般写一个判断webview能不能goback`````如果能就goback，不能就做其他处理```此处不想写了````
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_BACK:
+                if (activity_main_web.getUrl() != null&&!activity_main_web.getUrl().contains("test/test.html")) {
+                    if (initWebMod.customView != null) {
+                        initWebMod.hideCustomView();
+                    }
+                    if ((System.currentTimeMillis() - backTime) > 1000) {
+                        backTime = System.currentTimeMillis();
+                        activity_main_web.goBack();
+
+                    } else {
+                        activity_main_web.loadUrl(URL);
+                    }
+                } else {
+                    if ((System.currentTimeMillis() - exitTime) > 2000) {
+                        exitTime = System.currentTimeMillis();
+//                        showLZGDialog("再次点击以退出", 0);
+                        builder = new AlertDialog.Builder(MainActivity.this);
+                        builder.setTitle("提示")
+                                .setMessage("确定退出？")
+                                .setCancelable(false)
+                                .setPositiveButton("确定", (dialogInterface, i) -> finish())
+                                .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                        dialogInterface.dismiss();
+                                    }
+                                })
+                                .create();
+                        builder.show();
+                    } else {
+                        finish();
+
+                    }
+                }
+
+                break;
+        }
+        return false;
 
     }
 }
