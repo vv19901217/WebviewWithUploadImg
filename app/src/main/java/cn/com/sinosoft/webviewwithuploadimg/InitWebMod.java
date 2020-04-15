@@ -286,7 +286,7 @@ public class InitWebMod {
             newWebView.setWebViewClient(new WebViewClient(){
                 @Override
                 public boolean shouldOverrideUrlLoading(WebView webView, String s) {
-//                    PDFActivity.naveToDZBD(mainActivity,s,"PDF界面");
+                    WIndowOpenActivity.naveToDZBD(mainActivity,s,"PDF界面");
                     Logger.e("pdfurl"+s);
                     return true;
                 }

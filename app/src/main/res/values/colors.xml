@@ -3,4 +3,132 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="white">#ffffff</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="gray">#4c4c4c</color>
+    <color name="transport">#00000000</color>
+
+
+    <color name="do_action_green">#009933</color>
+    <color name="edit">#949494</color>
+    <color name="textColor">#62676D</color>
+    <color name="registe">#7186AB</color>
+    <color name="registerbg">#f0eff5</color>
+    <color name="black">#000000</color>
+    <color name="promptColor1">#080808</color>
+    <color name="promptColor2">#515151</color>
+    <color name="text_person">#28ACEC</color>
+    <color name="bg">#EBEBEB</color>
+    <color name="search_bg">#F0EFF5</color>
+    <color name="red">#f1020d</color>
+    <color name="green">#46bb60</color>
+    <color name="right">#A6AAA9</color>
+    <color name="login_edit_bg">#D6D6D6</color>
+    <color name="login_edit_hint">#C9C5C4</color>
+    <color name="newbg">#F1F1F1</color>
+    <color name="toastbg">#D6D6D6</color>
+    <color name="textViewColor">#333333</color>
+
+
+
+
+    <color name="main_back">#f0f0f0</color>
+
+    <color name="bg_color">#EDEDED</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+    <color name="tran">#000000</color>
+    <color name="cutomer_categry_bg">#e1e1e1</color>
+    <color name="eform_title_color">#0d6ca7</color>
+    <color name="eform_background_color">#f5f5f5</color>
+    <color name="eform_barText_color">#5a5a5a</color>
+    <color name="eform_riskplan_listhead_color">#ececec</color>
+    <color name="main_btntext_color">#003580</color>
+    <color name="mine_gray">#fafafa</color>
+    <color name="kprogresshud_default_color">#b1000000</color>
+    <color name="kprogresshud_grey_color">#449E9E9E</color>
+    <color name="uvv_gray">#969696</color>
+    <color name="uvv_black">#ff000000</color>
+    <color name="uvv_light_gray">#ffF0F0F0</color>
+    <color name="uvv_titlebar_bg">#7f000000</color>
+    <color name="green_url_bg">#f5f9f6</color>
+    <!--    <color name="colorPrimary">#3F51B5</color>-->
+    <color name="sl_jbs_on">#FF7600</color>
+    <color name="sl_jbs_off">#FF4902</color>
+    <color name="sl_search_bg">#999999</color>
+
+
+
+
+
+    <!-- page of custommanage -->
+    <color name="transparent">#00000000</color>
+    <color name="grey">#999999</color>
+    <color name="blue_item_title">#ff89a7c1</color>
+    <color name="extraBule">#03438D</color>
+    <color name="lightBule">#0d6ca7</color>
+    <color name="orange">#FFB716</color>
+    <!-- blue -->
+    <color name="blue">#0000ff</color>
+    <color name="bluelight">#47b8fc</color>
+    <color name="preparing_cost_title_txt_color">#006cd3</color>
+
+    <!-- 客户管理模块添加界面字体颜色 -->
+    <color name="activity_customer_add_tv_title">#065a8b</color>
+    <color name="activity_customer_add_tv">#ff000000</color>
+    <color name="hintword">#7FFF00</color>
+
+    <color name="main_head_blue">#007fff</color>
+    <color name="main_head_green">#009b63</color>
+    <color name="main_foot_blue">#037de3</color>
+    <color name="lightgray">#D3D3D3</color><!--亮灰色 -->
+    <color name="whitesmoke">#F5F5F5</color><!--烟白色 -->
+    <color name="personinfo_foot">#f0f3f8</color>
+    <color name="watch_item_btn_back">#eaeaea</color>
+    <color name="watch_item_tv_upload">#a7a7a7</color>
+
+
+    <!-- infor 布局颜色  -->
+    <color name="infor_layout_title_color">#007ce8</color>
+    <color name="infor_verifylayout_button_color">#ffb71b</color>
+    <color name="infor_videolayout_button_color">#fed900</color>
+    <color name="infor_title_color">#007de3</color>
+    <color name="infor_white">#ffffff</color>
+    <color name="infor_video_black">#000000</color>
+    <color name="infor_background_color">#e7fce7</color>
+    <color name="infor_background">#f0f3f8</color>
+
+
+    <color name="message_background">#f4f9fc</color>
+
+
+    <color name="transparent_gray_background">#504f4e50</color>
+    <color name="transparent_sl_speed">#4DFFFFFF</color>
+    <color name="transparent_big_img_bg">#f9151515</color>
+    <color name="textcolor_sl_storage">#FB7300</color>
+    <color name="textcolor_sladapter_btnbg">#FD7500</color>
 </resources>

@@ -20,8 +20,10 @@
 				<input type="file" accept="image/*" class="img-upload">
 				<p>上传图片2</p>
 			</div>
-			<button class="but_boxr">打开另一个窗口</button>
 		</section>
+		<input type="button" value="打开一个新的普通地址" onclick="openWin()"/><br>
+		<input type="button" value="打开一个大的pdf地址" onclick="openWin1()"/><br>
+		<input type="button" value="打开一个小的pdf地址" onclick="openWin2()"/><br>
 </body>
 <script>
         $(function(){
@@ -30,7 +32,26 @@
 
             });
         })
+
     </script>
+<script>
+	 function openWin(){
+       		 window.opener=null;
+       		 window.open('https://www.zhangziwei.cn','我的博客');
+       		 window.close();
+    	}
+    	 function openWin1(){
+       		 window.opener=null;
+       		 window.open('http://www.zhangziwei.cn:8081/txt/Linux基础.pdf','Linux基础');
+       		 window.close();
+    	}
+    	 function openWin2(){
+       		 window.opener=null;
+       		 window.open('http://www.zhangziwei.cn:8081/txt/前端项目部署.pdf','前端项目部署');
+       		 window.close();
+    	}
+
+</script>
 
 </html>
 <!--不会写H5页面，里面上传，拍照的html和js都按照博客文档写的，按照作者所说，引入了JQuery
