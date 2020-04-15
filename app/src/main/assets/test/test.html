@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>测试页面</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+	<script type="text/javascript"  src="js/uploadimg.js"></script>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+		<section class="pic-content">
+			<div class="pic-group">
+				<img src=""  >
+				<input type="file" accept="image/*" class="img-upload">
+				<p>上传图片</p>
+			</div>
+			<div class="pic-group">
+				<img src="" >
+				<input type="file" accept="image/*" class="img-upload">
+				<p>上传图片2</p>
+			</div>
+			<button class="but_boxr">打开另一个窗口</button>
+		</section>
+</body>
+<script>
+        $(function(){
+            $(".img-upload").change(function () {
+                imgUpload.readURL(this);
+
+            });
+        })
+    </script>
+
+</html>
+<!--不会写H5页面，里面上传，拍照的html和js都按照博客文档写的，按照作者所说，引入了JQuery
+····博客地址参见本文链接地址
+本文链接：https://blog.csdn.net/qq_42363090/article/details/99646811-->
