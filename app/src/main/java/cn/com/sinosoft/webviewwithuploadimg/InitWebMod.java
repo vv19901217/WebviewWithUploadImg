@@ -477,6 +477,7 @@ public class InitWebMod {
        mainActivity.cameraFielPath = imageStorageDir + File.separator + "IMG_" + String.valueOf(System.currentTimeMillis()) + ".jpg";
         File file = new File(mainActivity.cameraFielPath);
         mainActivity.imageUri = Uri.fromFile(file);        // 指定拍照存储位置的方式调起相机
+        Logger.e("carema="+file.getAbsolutePath().toString());
         //需要显示应用的意图列表，这个list的顺序和选择菜单上的图标顺序是相关的，请注意。
         final List<Intent> cameraIntents = new ArrayList<Intent>();
         final Intent captureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);

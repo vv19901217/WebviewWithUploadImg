@@ -304,7 +304,11 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         Uri result = null;
+        Logger.e(requestCode+"=CODE");
+        Logger.e(hasFile(cameraFielPath)+"===123");
+
         if (requestCode == FILECHOOSER_REQUESTCODE) {
+
             if (null != data && null != data.getData()) {
                 result = data.getData();
             }
@@ -330,6 +334,7 @@ public class MainActivity extends AppCompatActivity {
      * @return
      */
     private boolean hasFile(String cameraFielPath) {
+        Logger.e("PANDUAN="+cameraFielPath);
         //判断文件是否存在
         try {
             File f = new File(cameraFielPath);
